@@ -31,16 +31,15 @@
   </body>
   <script>
     function goFullscreen() {
-    let video = document.createElement("video");
-    video.style.position = "absolute";
-    video.style.width = "1px"; // Petit pour être invisible
-    video.style.height = "1px";
-    document.body.appendChild(video);
-    video.play(); // Nécessaire pour que Safari accepte le plein écran
-    video.webkitEnterFullscreen(); // Mode plein écran sur iOS
-}
+      let video = document.createElement("video");
+      video.style.position = "absolute";
+      video.style.width = "1px"; // Petit pour être invisible
+      video.style.height = "1px";
+      document.body.appendChild(video);
+      video.play(); // Nécessaire pour que Safari accepte le plein écran
+      video.webkitEnterFullscreen(); // Mode plein écran sur iOS
+    }
 
-document.getElementById("fullscreen-btn").addEventListener("click", goFullscreen);
-
+    document.getElementById("fullscreen-btn").addEventListener("click", goFullscreen);
   </script>
 </html>
